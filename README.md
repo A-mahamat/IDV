@@ -1,46 +1,29 @@
 # SOIVD – Système Optimisé d’Intégration Virtuelle de Données
 
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Master2-IAFA/65307369?color=red&style=for-the-badge)
 
-![GitHub dev_language](https://img.shields.io/badge/Python-yellow?style=flat&logo=python&logoColor=white)
-![GitHub dev_language](https://img.shields.io/badge/Jupyter-orange?style=flat&logo=jupyter&logoColor=white)
-![GitHub dev_language](https://img.shields.io/badge/Pandas-6aa84f?style=flat&logo=pandas&logoColor=white)
-![GitHub dev_language](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-![GitHub dev_language](https://img.shields.io/badge/API-blue?style=flat&logo=fastapi&logoColor=white)
-![GitHub dev_language](https://img.shields.io/badge/Trello-brown?style=flat&logo=trello&logoColor=white)
-
-![GitHub contributors](https://img.shields.io/github/contributors/Master2-IAFA/65307369?style=social)
 
 
 
 <img src="./Assets/SOIVD-logo-gif.gif">
 
 # **Projet Chef d'œuvre** 
-### **Université Toulouse III - Paul Sabatier**
 
-Membres du groupe :
 
-- ERREBIAI Chaimae : chaimae.errebiai2@gmail.com
--	KEBIRI Issam Eddine : kebiri.isam.dine@gmail.com 
--	GHORBEL Ahmed Amine : ghorbelahmedaminelfet@gmail.com 
--	HADDOU khalid : khalidhaddou99@gmail.com 
--	ABAKAR Issa : issaabakar17@gmail.com 
 
-Responsable pédagogique :
-- SHAOYI Yin : shaoyi.yin@irit.fr
+
+
+
 
 ## About The Project
 Le but de ce projet est de créé un Système Optimisé d’Intégration Virtuelle De
-Données – SOIVD qui exploitera différentes bases de données en relation avec
-l’énergie et la météo afin d’apporter une analyse du contexte actuel de crise
-d'énergies.
+Données – SOIVD qui exploitera une bases de données en relation avec
+ la météo. 
+
 ##### Contexte
-● Intégration virtuelle de données provenant de plusieurs sources, où qu'elles se trouvent.  
+● Intégration virtuelle de données provenant de OpenWeather.  
 
-● Évolution vers de grosses quantités de données (Big Data).
-
-● Plusieurs sources d’informations (SGBD relationnels, fichiers, applications, pages Web ...)    
+● Évolution vers de grosses quantités de données (Big Data).    
 
 ● Des données de plus en plus hétérogènes et interfaces d’accès variées (langages d’interrogation, modèle de données, interface de l'application pour l'utilisateur)
 
@@ -53,11 +36,11 @@ d'énergies.
 
 ##### Solution proposée  
 Un Système Optimisé d’Intégration Virtuelle De Données - SOIVD avec une
-architecture médiateur-adaptateur et une capacité d’intégration de plusieurs sources
-de données hétérogènes.
+architecture médiateur-adaptateur et une capacité d’intégration de
+de données en temps rèel.
 
 ##### Objectif
-Accéder de manière uniforme à des sources multiples, autonomes, hétérogènes et structurées.
+Mettre en place un système d'intégration de données en temps réel pour la météo, permettant à l'utilisateur de sélectionner une ville de son choix, puis de récupérer et afficher les données météorologiques actuelles de cette ville à l'aide de l'API OpenWeather.
 
 #### Built With
 - Python
@@ -116,16 +99,14 @@ Diagramme de séquence
 
 ## Datasets
 
-Choix des Bases de données : Nous avons choisi les bases de données par rapport aux contextes de crise de l’énergie, nous exploiterons donc deux API contenant des données relatives à la consommation gaz et électricité dans différentes régions, le troisième API quant à lui contient des données de population en France, et le dernier API contient un jeu de données des informations sur les logements en France.
+"Choix des Bases de données : Notre sélection des bases de données est guidée par la pertinence par rapport au contexte du réchauffement climatique. Dans cette optique, nous avons décidé d'exploiter une API fournissant des données météorologiques provenant de différentes régions. Pour l'instant, notre focus se porte principalement sur quelques villes en France. Cependant, nos plans incluent une expansion future vers d'autres régions du monde, afin d'explorer les perspectives globales du changement climatique."
 
-### Description des APIs
+### Description de l'API
 
 | API                                                                                                                                 | Description                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| [API Logement](<https://opendata.caissedesdepots.fr/pages/pagehomerefonte/>) | Le jeu de données sur les logements disponible sur le site opendata.caissedesdepots fournit des informations sur les logements en France. Ces données sont recueillies auprès de différents acteurs du marché immobilier et incluent des informations sur les transactions immobilières, les prix de vente, les caractéristiques des logements, etc. |
-| [API Energie ODRE](https://odre.opendatasoft.com/explore/dataset/conso-epci-annuelle/information/?disjunctive.libelle_epci&disjunctive.libelle_departements&disjunctive.libelle_regions&disjunctive.e_operateurs&disjunctive.g_operateurs) | Ce jeu de données rendu disponible par la plateforme d'Open Data Réseaux Énergies (ODRÉ) est constitué à partir des données locales de consommation finale en MWh publiés par le ministère de la Transition écologique et solidaire (état au 01/10/2020), regroupées par EPCI (établissements publics de coopération intercommunale), les données sont multiénergies, multiopérateurs et multi-réseaux |
-| [API Energie ODE](https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-epci/information/)  | Cette base de données issue de l’agence ORE (Opérateurs de Réseaux d’Énergie) qui est une alliance de tous les distributeurs français d'électricité et de gaz permet de visualiser l’évolution de 2011 à 2021 des consommations d'électricité et de gaz par secteur d'activité (résidentiel, tertiaire, industriel, agricole ou non affecté) et par EPCI (établissements publics de coopération intercommunale). 
-| [API Population](https://public.opendatasoft.com/api/records/1.0/search/?dataset=demographyref-france-pop-legale-commune-arrondissement-municipal-millesime&q=&rows=3536&facet=reg_code&facet=reg_name&facet=com_arm_code&facet=com_arm_name&facet=dep_code&facet=arrdep_code&facet=census_year&facet=start_year&facet=geo_year&facet=epci_name&facet=epci_code&facet=dep_name/)  | Le jeu de données de population disponible sur le site public.opendatasoft fournit des informations démographiques sur les communes et arrondissements municipaux en France. Les données incluent le nombre d'habitants par commune, la densité de population, la répartition par sexe et par tranche d'âge, ainsi que des informations sur les migrations et les naissances, le jeu de données couvre plusieurs années.  |
+| [API ](<https://openweathermap.org/current>) | Le jeu de données météorologiques disponible sur le site **OpenWeather** offre des renseignements sur le climat de toute localité à travers le monde. Ces données sont recueillies à partir de diverses sources telles que des satellites, des radars et un large réseau de stations météorologiques, entre autres. |
+
 
 
 
