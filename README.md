@@ -1,5 +1,8 @@
 # SOIVD – Système Optimisé d’Intégration Virtuelle de Données
 
+<img src="./Assets/SOIVD-logo-gif.gif">
+
+
 
 # **Projet Chef d'œuvre** 
 
