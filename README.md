@@ -1,6 +1,6 @@
 # SOIVD – Système Optimisé d’Intégration Virtuelle de Données
 
-<img src="Assets/SOIVD-logo-gif.gif">
+<img src="Actif/SOIVD-logo-gif.gif">
 
 
 
