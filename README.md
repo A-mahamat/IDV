@@ -1,12 +1,6 @@
 # SOIVD – Système Optimisé d’Intégration Virtuelle de Données
 
 
-
-
-
-
-<img src="./Assets/SOIVD-logo-gif.gif">
-
 # **Projet Chef d'œuvre** 
 
 
@@ -89,17 +83,14 @@ pip install dateutil
 
 - flask : https://flask.palletsprojects.com/en/2.2.x/
 
-## Conception
-La figure ci-dessus représente l'architecture adoptée pour la réalisation du présent projet. Il s'agit d'une architecture Adaptateur-Médiateur dont nous allons utiliser l'approche GAV
-<img src="./Assets/SOIVD_Global_architecture.png">
 
-Diagramme de séquence
-<img src="./Assets/SOIVD_Sequence_diagram.png">
+
+
 
 
 ## Datasets
 
-"Choix des Bases de données : Notre sélection des bases de données est guidée par la pertinence par rapport au contexte du réchauffement climatique. Dans cette optique, nous avons décidé d'exploiter une API fournissant des données météorologiques provenant de différentes régions. Pour l'instant, notre focus se porte principalement sur quelques villes en France. Cependant, nos plans incluent une expansion future vers d'autres régions du monde, afin d'explorer les perspectives globales du changement climatique."
+Choix des Bases de données : Notre sélection des bases de données est guidée par la pertinence par rapport au contexte du réchauffement climatique. Dans cette optique, nous avons décidé d'exploiter une API fournissant des données météorologiques provenant de différentes régions. Pour l'instant, notre focus se porte principalement sur quelques villes en France. Cependant, nos plans incluent une expansion future vers d'autres régions du monde, afin d'explorer les perspectives globales du changement climatique.
 
 ### Description de l'API
 
@@ -116,9 +107,7 @@ Diagramme de séquence
  - Dans le cas où l'env virtuel est crée par Anaconda, il faut spécifier dans le anaconda prompt : conda activate <environment name>
  - Pointer sur le dossier api_flask  (./api_flask)
  - Installer les bibliothèques nécessaires dans le fichier requirements.txt (Flask, requests, json, ...)
-#### Exploration de l'architecture du projet flask 
- - Dossier static : contient tous les fichiers de style et les images si vous aurez besoin
- - Dossier templates : contient tous les fichiers html pour la partie front-end du projet
+
 #### Exécution de l'app Flask
  - Dans la commande prompt d'anaconda : 
      1) set FLASK_APP=app.py
@@ -127,21 +116,14 @@ Diagramme de séquence
  - Taper dans l'url :  http://127.0.0.1:5000/
  - Obtenir les résultats affichés dans la page web
  
-#### Affichage:
-![alt text](https://imagizer.imageshack.com/img922/8676/2o56BP.png)
-![alt text](https://imagizer.imageshack.com/img923/2163/d1oSyG.png)
+
 ## Références:
-- [1] S. A. Y. P. V. S. S. Adah, «Query Caching and Optimization in Distributed Mediator Systems,» SIGMOD, p. 12, 1996.
-- [2] A. R. J. O. Alon Halevy, «Data Integration: The Teenage Years,» VLDB Endowment, p. 8, 2006.
-- [3] A. H. G. M. W.-C. T. Behzad Golshan, «Data Integration: After the Teenage Years,» PODS’17, p. 6, 2017.
-- [4] P. K. P. S. G. A. A. J. R. B. S. D. G. H. L. P. M. S. M. E. P. H. Z. AnHai Doan, «Toward a System Building Agenda for Data Integration (and Data Science),» IEEE, p. 12.
-- [5] G. Wiederhold, «Mediators in the Architecture of Future Information Systems,» IEEE, p. 38, 1991.
-- [6] Api de logements sociaux et bailleurs par région : https://opendata.caissedesdepots.fr/pages/pagehomerefonte/ 
-- [7] Api energie 1 :consommation quotidienne brute r ́egional electricit ́e ou de gaz : https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-epci/information/ 
-- [8] Api energie 2 : Production demi-horaire agrégée par région : https://odre.opendatasoft.com/explore/dataset/conso-epci-annuelle/ 
-- [9] Api population : informations démographiques sur les communes en France : https://public.opendatasoft.com/explore/dataset/population-francaise-communes/ 
-- [10] Flask framework : https://flask.palletsprojects.com/en/2.2.x/ 
-- [11] Anaconda distribution : https://docs.anaconda.com/anaconda/ 
+-
+- [1] A. R. J. O. Alon Halevy, «Data Integration: The Teenage Years,» VLDB Endowment, p. 8, 2006.
+- [2] A. H. G. M. W.-C. T. Behzad Golshan, «Data Integration: After the Teenage Years,» PODS’17, p. 6, 2017.
+-[3] Tutoriel API météo en R: https://www.youtube.com/watch?v=IkJ8Sx3yBwg
+- [4] Flask framework : https://flask.palletsprojects.com/en/2.2.x/ 
+- [5] Anaconda distribution : https://docs.anaconda.com/anaconda/ 
 
 
 
