@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Formulaire</title>
+
+</head>
+
+<body>
+  
+
+  <div class="formContaint">
+    <div class="header">
+      <h1>Bienvenue sur  IVD </h1>
+    </div>
+    <hr>
+    <form class="form" action="{{url_for('post_submit_form')}}" method="POST">
+
+        <!--Choosing Query -->
+        <div class="queryContainer" >
+          <label for="defined_query">Choisir une requête :</label>
+          <select class="form-control" id="defined_query" name="defined_query">
+            <option>Paris</option>
+            <option>Lyon</option>
+            <option>Rennes</option>
+            <option>Marseille</option>
+            <option>Lille</option>
+            <option>Nantes</option>
+            <option>Nice</option>
+            <option>Montpellier</option>
+            <option>N'djamena</option>
+            <option>Le caire</option>
+            
+            
+           
+          </select>         
+        </div>
+        
+        <div class="btnContainer">
+          <button type="submit" style="margin-right: 30px;" href="/post_submit_form" class="btn btn-primary">Submit</button>
+          <a href="/sqlQuery" class="btn btn-primary stretched-link">Create Query</a>
+        </div>
+        
+      </form>
+
+  </div>
+    
+</body>
+</html>
