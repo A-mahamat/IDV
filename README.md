@@ -7,16 +7,15 @@
 # SOIVD – Système Optimisé d’Intégration Virtuelle de Données
 
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Master2-IAFA/65307369?color=red&style=for-the-badge)
 
-![GitHub dev_language](https://img.shields.io/badge/Python-yellow?style=flat&logo=python&logoColor=white)
-![GitHub dev_language](https://img.shields.io/badge/Jupyter-orange?style=flat&logo=jupyter&logoColor=white)
+
+![GitHub dev_language](https://img.shields.io/badge/Python-green?style=flat&logo=python&logoColor=white)
+
 ![GitHub dev_language](https://img.shields.io/badge/Pandas-6aa84f?style=flat&logo=pandas&logoColor=white)
 ![GitHub dev_language](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 ![GitHub dev_language](https://img.shields.io/badge/API-blue?style=flat&logo=fastapi&logoColor=white)
-![GitHub dev_language](https://img.shields.io/badge/Trello-brown?style=flat&logo=trello&logoColor=white)
 
-![GitHub contributors](https://img.shields.io/github/contributors/Master2-IAFA/65307369?style=social)
+
 
 
 
