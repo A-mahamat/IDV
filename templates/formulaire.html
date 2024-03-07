@@ -15,7 +15,7 @@
 
   <div class="formContaint">
     <div class="header">
-      <h1>Bienvenue sur  IVD </h1>
+      <h1>Bienvenue sur  SOIVD </h1>
     </div>
     <hr>
     <form class="form" action="{{url_for('post_submit_form')}}" method="POST">
@@ -24,25 +24,21 @@
         <div class="queryContainer" >
           <label for="defined_query">Choisir une requête :</label>
           <select class="form-control" id="defined_query" name="defined_query">
-            <option>Paris</option>
-            <option>Lyon</option>
-            <option>Rennes</option>
-            <option>Marseille</option>
-            <option>Lille</option>
-            <option>Nantes</option>
-            <option>Nice</option>
-            <option>Montpellier</option>
-            <option>N'djamena</option>
-            <option>Le caire</option>
-            
-            
+            <option>SELECT region, annee, consommation_brute_totale, consommation_brute_electricite_rte FROM df </option>
+            <option>SELECT region, date, com_arm_pop_tot, com_arm_pop_mun FROM df 
+                    WHERE region='Occitanie' and com_arm_pop_tot>10000</option>
+            <option>SELECT region, annee, nb_points_injection, com_arm_pop_tot, part_logement_sociaux_geres_oph, nbre_logements FROM df</option>
+            <option>SELECT region, date, consommation_brute_totale, nbre_logements, part_logement_sociaux_geres_sem FROM df</option>
+            <option>SELECT region, consommation_brute_gaz_totale, com_arm_pop_tot, nbre_bailleurs, part_logement_sociaux_geres_oph FROM df</option>
+            <option>SELECT region, consommation_brute_totale, com_arm_pop_tot FROM df</option>
+            <option>SELECT region, annee, nbre_bailleurs, part_logement_sociaux_geres_sem FROM df</option>
            
           </select>         
         </div>
         
         <div class="btnContainer">
           <button type="submit" style="margin-right: 30px;" href="/post_submit_form" class="btn btn-primary">Submit</button>
-          
+          <a href="/sqlQuery" class="btn btn-primary stretched-link">Create Query</a>
         </div>
         
       </form>
