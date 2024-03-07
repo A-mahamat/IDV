@@ -102,10 +102,10 @@ pip install dateutil
 
 ## Conception
 La figure ci-dessus représente l'architecture adoptée pour la réalisation du présent projet. Il s'agit d'une architecture Adaptateur-Médiateur dont nous allons utiliser l'approche GAV
-<img src="./Assets/SOIVD_Global_architecture.png">
+<img src="./static/assets/SOIVD_Global_architecture.png">
 
 Diagramme de séquence
-<img src="./Assets/SOIVD_Sequence_diagram.png">
+<img src="./static/assets/SOIVD_Sequence_diagram.png">
 
 
 ## Datasets
