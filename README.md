@@ -1,12 +1,25 @@
+
+
+
+
+
+
 # SOIVD – Système Optimisé d’Intégration Virtuelle de Données
 
-<img src="Actif/SOIVD-logo-gif.gif">
 
 
 
-# **Projet Chef d'œuvre** 
+![GitHub dev_language](https://img.shields.io/badge/Python-green?style=flat&logo=python&logoColor=white)
+
+![GitHub dev_language](https://img.shields.io/badge/Pandas-6aa84f?style=flat&logo=pandas&logoColor=white)
+![GitHub dev_language](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
+![GitHub dev_language](https://img.shields.io/badge/API-blue?style=flat&logo=fastapi&logoColor=white)
 
 
+
+
+
+<img src="./Assets/SOIVD-logo-gif.gif">
 
 
 
@@ -14,13 +27,14 @@
 
 ## About The Project
 Le but de ce projet est de créé un Système Optimisé d’Intégration Virtuelle De
-Données – SOIVD qui exploitera une bases de données en relation avec
- la météo. 
-
+Données – SOIVD qui exploitera différentes bases de données en relation avec
+l’énergie et la météo. 
 ##### Contexte
-● Intégration virtuelle de données provenant de OpenWeather.  
+● Intégration virtuelle de données provenant de plusieurs sources, où qu'elles se trouvent.  
 
-● Évolution vers de grosses quantités de données (Big Data).    
+● Évolution vers de grosses quantités de données (Big Data).
+
+● Plusieurs sources d’informations (SGBD relationnels, fichiers, applications, pages Web ...)    
 
 ● Des données de plus en plus hétérogènes et interfaces d’accès variées (langages d’interrogation, modèle de données, interface de l'application pour l'utilisateur)
 
@@ -33,11 +47,11 @@ Données – SOIVD qui exploitera une bases de données en relation avec
 
 ##### Solution proposée  
 Un Système Optimisé d’Intégration Virtuelle De Données - SOIVD avec une
-architecture médiateur-adaptateur et une capacité d’intégration de
-de données en temps rèel.
+architecture médiateur-adaptateur et une capacité d’intégration de plusieurs sources
+de données hétérogènes.
 
 ##### Objectif
-Mettre en place un système d'intégration de données en temps réel pour la météo, permettant à l'utilisateur de sélectionner une ville de son choix, puis de récupérer et afficher les données météorologiques actuelles de cette ville à l'aide de l'API OpenWeather.
+Accéder de manière uniforme à des sources multiples, autonomes, hétérogènes et structurées.
 
 #### Built With
 - Python
@@ -86,21 +100,26 @@ pip install dateutil
 
 - flask : https://flask.palletsprojects.com/en/2.2.x/
 
+## Conception
+La figure ci-dessus représente l'architecture adoptée pour la réalisation du présent projet. Il s'agit d'une architecture Adaptateur-Médiateur dont nous allons utiliser l'approche GAV
+<img src="./Assets/SOIVD_Global_architecture.png">
 
-
-
+Diagramme de séquence
+<img src="./Assets/SOIVD_Sequence_diagram.png">
 
 
 ## Datasets
 
-Choix des Bases de données : Notre sélection des bases de données est guidée par la pertinence par rapport au contexte du réchauffement climatique. Dans cette optique, nous avons décidé d'exploiter une API fournissant des données météorologiques provenant de différentes régions. Pour l'instant, notre focus se porte principalement sur quelques villes en France. Cependant, nos plans incluent une expansion future vers d'autres régions du monde, afin d'explorer les perspectives globales du changement climatique.
+Choix des Bases de données : Nous exploiterons deux API contenant des données relatives à la consommation gaz et électricité dans différentes régions, le troisième API quant à lui contient des données de population en France, et le dernier API contient un jeu de données des informations sur les logements en France.
 
-### Description de l'API
+### Description des APIs
 
 | API                                                                                                                                 | Description                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| [API ](<https://openweathermap.org/current>) | Le jeu de données météorologiques disponible sur le site **OpenWeather** offre des renseignements sur le climat de toute localité à travers le monde. Ces données sont recueillies à partir de diverses sources telles que des satellites, des radars et un large réseau de stations météorologiques, entre autres. |
-
+| [API Logement](<https://opendata.caissedesdepots.fr/pages/pagehomerefonte/>) | Le jeu de données sur les logements disponible sur le site opendata.caissedesdepots fournit des informations sur les logements en France. Ces données sont recueillies auprès de différents acteurs du marché immobilier et incluent des informations sur les transactions immobilières, les prix de vente, les caractéristiques des logements, etc. |
+| [API Energie ODRE](https://odre.opendatasoft.com/explore/dataset/conso-epci-annuelle/information/?disjunctive.libelle_epci&disjunctive.libelle_departements&disjunctive.libelle_regions&disjunctive.e_operateurs&disjunctive.g_operateurs) | Ce jeu de données rendu disponible par la plateforme d'Open Data Réseaux Énergies (ODRÉ) est constitué à partir des données locales de consommation finale en MWh publiés par le ministère de la Transition écologique et solidaire (état au 01/10/2020), regroupées par EPCI (établissements publics de coopération intercommunale), les données sont multiénergies, multiopérateurs et multi-réseaux |
+| [API Energie ODE](https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-epci/information/)  | Cette base de données issue de l’agence ORE (Opérateurs de Réseaux d’Énergie) qui est une alliance de tous les distributeurs français d'électricité et de gaz permet de visualiser l’évolution de 2011 à 2021 des consommations d'électricité et de gaz par secteur d'activité (résidentiel, tertiaire, industriel, agricole ou non affecté) et par EPCI (établissements publics de coopération intercommunale). 
+| [API Population](https://public.opendatasoft.com/api/records/1.0/search/?dataset=demographyref-france-pop-legale-commune-arrondissement-municipal-millesime&q=&rows=3536&facet=reg_code&facet=reg_name&facet=com_arm_code&facet=com_arm_name&facet=dep_code&facet=arrdep_code&facet=census_year&facet=start_year&facet=geo_year&facet=epci_name&facet=epci_code&facet=dep_name/)  | Le jeu de données de population disponible sur le site public.opendatasoft fournit des informations démographiques sur les communes et arrondissements municipaux en France. Les données incluent le nombre d'habitants par commune, la densité de population, la répartition par sexe et par tranche d'âge, ainsi que des informations sur les migrations et les naissances, le jeu de données couvre plusieurs années.  |
 
 
 
@@ -110,7 +129,9 @@ Choix des Bases de données : Notre sélection des bases de données est guidée
  - Dans le cas où l'env virtuel est crée par Anaconda, il faut spécifier dans le anaconda prompt : conda activate <environment name>
  - Pointer sur le dossier api_flask  (./api_flask)
  - Installer les bibliothèques nécessaires dans le fichier requirements.txt (Flask, requests, json, ...)
-
+#### Exploration de l'architecture du projet flask 
+ - Dossier static : contient tous les fichiers de style et les images si vous aurez besoin
+ - Dossier templates : contient tous les fichiers html pour la partie front-end du projet
 #### Exécution de l'app Flask
  - Dans la commande prompt d'anaconda : 
      1) set FLASK_APP=app.py
@@ -121,12 +142,17 @@ Choix des Bases de données : Notre sélection des bases de données est guidée
  
 
 ## Références:
--
-- [1] A. R. J. O. Alon Halevy, «Data Integration: The Teenage Years,» VLDB Endowment, p. 8, 2006.
-- [2] A. H. G. M. W.-C. T. Behzad Golshan, «Data Integration: After the Teenage Years,» PODS’17, p. 6, 2017.
--[3] Tutoriel API météo en R: https://www.youtube.com/watch?v=IkJ8Sx3yBwg
-- [4] Flask framework : https://flask.palletsprojects.com/en/2.2.x/ 
-- [5] Anaconda distribution : https://docs.anaconda.com/anaconda/ 
+- [1] S. A. Y. P. V. S. S. Adah, «Query Caching and Optimization in Distributed Mediator Systems,» SIGMOD, p. 12, 1996.
+- [2] A. R. J. O. Alon Halevy, «Data Integration: The Teenage Years,» VLDB Endowment, p. 8, 2006.
+- [3] A. H. G. M. W.-C. T. Behzad Golshan, «Data Integration: After the Teenage Years,» PODS’17, p. 6, 2017.
+- [4] P. K. P. S. G. A. A. J. R. B. S. D. G. H. L. P. M. S. M. E. P. H. Z. AnHai Doan, «Toward a System Building Agenda for Data Integration (and Data Science),» IEEE, p. 12.
+- [5] G. Wiederhold, «Mediators in the Architecture of Future Information Systems,» IEEE, p. 38, 1991.
+- [6] Api de logements sociaux et bailleurs par région : https://opendata.caissedesdepots.fr/pages/pagehomerefonte/ 
+- [7] Api energie 1 :consommation quotidienne brute r ́egional electricit ́e ou de gaz : https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-epci/information/ 
+- [8] Api energie 2 : Production demi-horaire agrégée par région : https://odre.opendatasoft.com/explore/dataset/conso-epci-annuelle/ 
+- [9] Api population : informations démographiques sur les communes en France : https://public.opendatasoft.com/explore/dataset/population-francaise-communes/ 
+- [10] Flask framework : https://flask.palletsprojects.com/en/2.2.x/ 
+- [11] Anaconda distribution : https://docs.anaconda.com/anaconda/ 
 
 
 
