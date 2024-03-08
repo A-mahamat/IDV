@@ -101,7 +101,7 @@ pip install dateutil
 - flask : https://flask.palletsprojects.com/en/2.2.x/
 
 ## Conception
-La figure ci-dessus représente l'architecture adoptée pour la réalisation du présent projet. Il s'agit d'une architecture Adaptateur-Médiateur dont nous allons utiliser l'approche GAV
+La figure ci-dessous représente l'architecture adoptée pour la réalisation du présent projet. Il s'agit d'une architecture Adaptateur-Médiateur dont nous allons utiliser l'approche GAV
 <img src="./static/assets/SOIVD_Global_architecture.png">
 
 Diagramme de séquence
