@@ -26,7 +26,7 @@
 
 
 ## le Projet
-L'objectif de ce projet est de développer un Système d'Intégration Virtuelle de Données (SIVD) optimisé, qui tirera parti de diverses sources de données liées à l'énergie et aux conditions météorologique 
+L'objectif de ce projet est de développer un Système d'Intégration Virtuelle de Données (SIVD) optimisé, qui tirera parti de diverses sources de données liées à l'énergie et aux conditions météorologique;
 ##### Contexte
 ● Intégration virtuelle de données provenant de diverses  origines.  
 
@@ -124,7 +124,7 @@ Source de données: Nous utiliserons deux API fournissant des données sur l'uti
 - [4] Api energie 2 : https://odre.opendatasoft.com/explore/dataset/conso-epci-annuelle/ 
 - [5] Api population : https://public.opendatasoft.com/explore/dataset/population-francaise-communes/ 
 - [6] Flask framework : https://flask.palletsprojects.com/en/2.2.x/ 
-- [7] Anaconda distribution : https://docs.anaconda.com/anaconda/ 
+- [7] Anaconda distribution : https://docs.anaconda.com/anaconda/
 
 
 
