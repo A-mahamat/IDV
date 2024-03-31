@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 
 
-# Adapters
+# les Adapters
 
 class EnergyAdapter1:
     def __init__(self):
@@ -51,7 +51,7 @@ class PopulationAdapter:
         data=data.rename(columns={"reg_name": "region"})
         return data
 
-# Logement_sociaux_bailleurs adapter
+# Logement sociaux bailleurs adapter
 class LogementAdapter:
     def __init__(self):
         """ The adapater for  Logement API """

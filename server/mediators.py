@@ -13,8 +13,7 @@ from sqlite3 import connect
 
 from server.adapters import EnergyAdapter1,EnergyAdapter2,PopulationAdapter,LogementAdapter
 
-
-# Mediator
+# Mediators
 
 class InformationMediator:
     def __init__(self):
@@ -121,6 +120,8 @@ class InformationMediator:
         print(f"\n {df4.shape} = 𝜎_{cond4}_(API_4)")
             
         return df1,df2,df3,df4
+
+    #foction pro
     
     
     def projection(self,list_api_1, list_api_2, list_api_3, list_api_4,Query):
