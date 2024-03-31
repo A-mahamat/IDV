@@ -93,12 +93,7 @@ pip install dateutil
 
 - flask : https://flask.palletsprojects.com/en/2.2.x/
 
-## Conception
-Figure répresentant l'architecture adoptée. 
-<img src="./static/assets/SOIVD_Global_architecture.png">
 
-Diagramme de séquence
-<img src="./static/assets/SOIVD_Sequence_diagram.png">
 
 
 ## Datasets
@@ -123,16 +118,13 @@ Source de données: Nous utiliserons deux API fournissant des données sur l'uti
  
 
 ## Références:
-- [1] S. A. Y. P. V. S. S. Adah, «Query Caching and Optimization in Distributed Mediator Systems,» SIGMOD, p. 12, 1996.
-- [2] A. H. G. M. W.-C. T. Behzad Golshan, «Data Integration: After the Teenage Years,» PODS’17, p. 6, 2017.
-- [3] P. K. P. S. G. A. A. J. R. B. S. D. G. H. L. P. M. S. M. E. P. H. Z. AnHai Doan, «Toward a System Building Agenda for Data Integration (and Data Science),» IEEE, p. 12.
-- [4] G. Wiederhold, «Mediators in the Architecture of Future Information Systems,» IEEE, p. 38, 1991.
-- [5] Api logements: https://opendata.caissedesdepots.fr/pages/pagehomerefonte/ 
-- [6] Api energie 1 : https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-epci/information/ 
-- [7] Api energie 2 : https://odre.opendatasoft.com/explore/dataset/conso-epci-annuelle/ 
-- [8] Api population : https://public.opendatasoft.com/explore/dataset/population-francaise-communes/ 
-- [9] Flask framework : https://flask.palletsprojects.com/en/2.2.x/ 
-- [10] Anaconda distribution : https://docs.anaconda.com/anaconda/ 
+- [1] https://depinfo.u-cergy.fr/~vodislav/Master/IED/fichiers/integration.pdf
+- [2] Api logements: https://opendata.caissedesdepots.fr/pages/pagehomerefonte/ 
+- [3] Api energie 1 : https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-epci/information/ 
+- [4] Api energie 2 : https://odre.opendatasoft.com/explore/dataset/conso-epci-annuelle/ 
+- [5] Api population : https://public.opendatasoft.com/explore/dataset/population-francaise-communes/ 
+- [6] Flask framework : https://flask.palletsprojects.com/en/2.2.x/ 
+- [7] Anaconda distribution : https://docs.anaconda.com/anaconda/ 
 
 
 
